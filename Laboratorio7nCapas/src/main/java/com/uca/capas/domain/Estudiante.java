@@ -56,7 +56,7 @@ public class Estudiante {
 	}
 
 	public void setNombre(String nombre) {
-		nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getApellido() {
@@ -64,7 +64,7 @@ public class Estudiante {
 	}
 
 	public void setApellido(String apellido) {
-		apellido = apellido;
+		this.apellido = apellido;
 	}
 
 	public Integer getEdad() {
@@ -72,7 +72,7 @@ public class Estudiante {
 	}
 
 	public void setEdad(Integer edad) {
-		edad = edad;
+		this.edad = edad;
 	}
 
 	public Boolean getEstado() {
@@ -80,7 +80,7 @@ public class Estudiante {
 	}
 
 	public void setEstado(Boolean estado) {
-		estado = estado;
+		this.estado = estado;
 	}
 
 	public Estudiante() {
