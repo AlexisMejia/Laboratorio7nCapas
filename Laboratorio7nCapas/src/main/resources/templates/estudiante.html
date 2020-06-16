@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Mostrar estudiantes</title>
+</head>
+<body>
+	<label>Estudiante con codigo:</label><label th:text="${estudiante.codigoEstudiante}"/>
+	<table>
+	<thead>
+	<th>Nombre:</th>
+	<th>Apellido:</th>
+	<th>Edad:</th>
+	<th>Estado:</th>
+	</thead>
+	
+	<tr>
+	<th th:text="${estudiante.Nombre}"/>
+	<th th:text="${estudiante.Apellido}"/>
+	<th th:text="${estudiante.Edad}"/>
+	<th th:text="${estudiante.estadoDelegate}">
+	</tr>
+	</table>
+	<a href="/estudiante">Regresar</a>
+</body>
+</html>

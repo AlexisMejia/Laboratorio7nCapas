@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Editar</title>
+</head>
+<body>
+<h1>Editar datos del estudiante</h1>
+<form th:action="@{/save}" th:object="${estudiante}" method="post">
+<input type="hidden" th:field="*{codigoEstudiante}"/>
+
+		<label>Nombre:</label>
+		<input th:field="*{nombre}" type="text"/>
+		<span th:errors="*{nombre}" style="color: #E81505"/><br>
+		
+		
+		<label>Apellido:</label>
+		<input th:field="*{apellido}" type="text"/>
+		<span th:errors="*{apellido}" style="color: #E81505"/><br>
+		
+		<label>Edad:</label>
+		<input type="number" th:field="*{edad}"/>
+		<span th:errors="*{edad}" style="color: #E81505"/><br>
+		
+		<label>Activo:</label>
+		<input type="radio" th:field="*{estado}" th:value="${true}">
+		<label>Inactivo:</label>
+		<input type="radio" th:field="*{estado}" th:value="${false}"><br>
+		
+		<input type="submit" value="Guardar">
+
+</form>
+</body>
+</html>
